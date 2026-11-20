@@ -667,3 +667,9 @@ config OKL4_LINK_SHBUF
 	      transport. This driver presents the link to Linux as a character device
 	      which can be written to or read from to access the shared memory. An ioctl
 	      on the device is used to send a virtual interrupt to the partner cell.
+
+config CHARGE_BYPASS
+	bool "Charge bypass control (sweet)"
+	default n
+	help
+	  Expose /sys/kernel/charge_bypass to control bypass charging.
